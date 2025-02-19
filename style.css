@@ -1,79 +1,136 @@
-:root {
-  --textColor: #282828;
-  --backgroundColor: rgba(247, 247, 247,.8);
-  --keyColor: #00b2ff;
-  --linkColor: var(--textColor);
-  --linkUnderlineColor: color-mix(in srgb, var(--keyColor) 50%, rgba(255, 255, 255, 0));
-}
 
-body {
-  font: 1em/1.25 IBM Plex Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: var(--textColor);
-  background-color: var(--backgroundColor);
-  min-height: 100vh;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    
+    body {
+    width: 100%;
+    max-width: 1000px;
+    font-family: "Roboto Condensed", sans-serif;
+    margin: auto;
+    padding: 0;
+    }
+    
+    .main_module {
+    background: url(https://i.ibb.co/MkRkRYGb/1.png);
+    height: 560px;
+    width: auto;
+    padding-top: 35px;
+    padding-left: 85px;
+    }
+    
+    h1 {
+    font-size: 70px; 
+    font-weight: 400;
+    font-family: "Neucha", sans-serif;
+    color: #00625e;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 200px;
+    }
+    
+    h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #00625e;
+    text-align: left;
+    margin-left: 1px;
+    margin-top: 39px;
+    margin-bottom: 0px;
+    margin-right: 598px;
+    }
 
-a {
-  color: var(--linkColor);
-  text-decoration: underline;
-  text-decoration-color: var(--linkUnderlineColor);
-  text-decoration-thickness: .0625em;
-  text-underline-offset: 0.25em;
-}
-
-a:hover {
-  color: var(--keyColor);
-}
-
-.layoutContainer {
-  padding: 1.5rem clamp(1.43rem, 2.5vw, 2.84rem) 3rem;
-}
-
-.header {
-  font-size: 1.5rem;
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  align-items: center;
-}
-
-.logo {
-  width: 1.75em;
-  height: 1.75em;
-  margin-right: 1em;
-  fill: var(--keyColor);
-}
-
-.nav {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: max-content;
-  justify-content: end;
-  column-gap: 1rem;
-}
-
-.lead {
-  font-size: clamp(2.5rem, 5vw, 5rem); /* Настраиваем кегль, равный 5% от ширины экрана, но в пределах 40—80 пк */
-}
-
-.lead p {
-  max-width: 18em; /* Ограничиваем абзацы в лиде по ширине, чтобы текст было удобно читать на широких экранах */
-}
-
-.about {
-  margin-top: 5vh; /* Добавляем отступ от шапки. Мы специально добавляем его здесь, а не в лиде, чтобы разделить ответственность. Наверняка нам захочется использовать лид на других страницах, в таком случае верхний маржин будет только мешать */
-}
-
-
-@media (width <= 576px) {
-  :root {
-    font-size: 14px;
-  }
-
-  .header {
-    font-size: 1rem;
-  }
-
-  .nav {
-    column-gap: 1.5em;
-  }
-}
+    h3 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+    text-align: left;
+    margin-left: 1px;
+    margin-top: 143px;
+    margin-bottom: 0px;
+    margin-right: 598px;
+    }
+    
+    p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.38;
+    }
+    
+    li, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+        
+    a {
+    color: #00625E;
+    text-decoration: none;
+    }
+    
+    .header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #cee9ef;
+    height: 100px;
+    }
+    
+    .header_logo {
+    margin-left: 83px;
+    margin-top: 1px;
+    }
+    
+    .header_logo-img {
+    height: auto;
+    width: 100%; 
+    } 
+    
+    .header_menu {
+    margin-left: 115px;
+    font-family: Neucha, sans-serif;
+    font-size: 20px;
+    color: #00625E;
+    
+    }
+    
+    .header_links {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #A5CED2;
+    }
+    
+    .header_menu ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 30px;
+    list-style: none;
+    gap: 53px;
+    margin-top: 8px;
+    }
+    
+    .header_login {
+        margin-left: 50px;
+        padding-top: 30px;
+        font-size: 20px;
+        display: flex;
+        align-items:center;
+        gap: 15px;
+    }
+    
+    .header_button {
+    padding: 3px 14px;
+    width: auto;
+    border-radius: 6px;
+    max-height: 40px;
+    background: #A4D3DE no-repeat center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.25s ease-in-out;
+    color: #00625E;
+    }
