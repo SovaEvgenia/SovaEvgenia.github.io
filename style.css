@@ -145,6 +145,7 @@
     .footer {
     display: block;
     position: relative;
+    height: 90px;
     background: url(https://i.ibb.co/PkSft5p/image.png);
     padding-left: 86px;
     padding-top: 1px;
