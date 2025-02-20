@@ -9,7 +9,6 @@
     }
     
     .main_module {
-    /*background: url(https://i.ibb.co/9kggLxT6/2.png); проверочный фон */
     background: url(https://i.ibb.co/Nn7wGwFn/image.png);
     height: 560px;
     width: auto;
@@ -70,7 +69,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     background: #cee9ef;
-    /*background: url(https://i.ibb.co/RG3b1tZ2/1.png); проверочный фон*/
     height: 100px;
     }
     
