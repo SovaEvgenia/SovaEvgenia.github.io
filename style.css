@@ -4,13 +4,13 @@
     body {
     width: 100%;
     max-width: 1000px;
-    font-family: "Roboto Condensed", sans-serif;
     margin: auto;
     padding: 0;
     }
     
     .main_module {
-    background: url(https://i.ibb.co/MkRkRYGb/1.png);
+    /*background: url(https://i.ibb.co/9kggLxT6/2.png); проверочный фон */
+    background: url(https://i.ibb.co/Nn7wGwFn/image.png);
     height: 560px;
     width: auto;
     padding-top: 35px;
@@ -35,10 +35,10 @@
     font-size: 40px;
     color: #00625e;
     text-align: left;
-    margin-left: 1px;
-    margin-top: 39px;
+    margin-left: 0px;
+    margin-top: 30px;
     margin-bottom: 0px;
-    margin-right: 598px;
+    margin-right: 600px;
     }
 
     h3 {
@@ -47,16 +47,10 @@
     font-size: 25px;
     color: #000000;
     text-align: left;
-    margin-left: 1px;
-    margin-top: 143px;
-    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 142px;
+    margin-bottom: 1px;
     margin-right: 598px;
-    }
-    
-    p {
-    margin: 0;
-    padding: 0;
-    line-height: 1.38;
     }
     
     li, ul {
@@ -76,30 +70,31 @@
     justify-content: flex-start;
     align-items: flex-start;
     background: #cee9ef;
+    /*background: url(https://i.ibb.co/RG3b1tZ2/1.png); проверочный фон*/
     height: 100px;
     }
     
     .header_logo {
     margin-left: 83px;
-    margin-top: 1px;
+    margin-top: 10px;
     }
     
     .header_logo-img {
     height: auto;
-    width: 100%; 
+    width: 80%; 
     } 
     
     .header_menu {
-    margin-left: 115px;
+    margin-left: 2px;
+    color: #00625E;
     font-family: Neucha, sans-serif;
     font-size: 20px;
-    color: #00625E;
-    
+    /*color: #00625E;*/
     }
     
     .header_links {
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 6px;
     text-decoration-thickness: 1px;
     text-decoration-color: #A5CED2;
     }
@@ -108,26 +103,27 @@
     display: flex;
     flex-flow: row nowrap;
     margin: 0;
-    padding: 30px;
+    padding: 34px;
     list-style: none;
     gap: 53px;
     margin-top: 8px;
     }
     
     .header_login {
-        margin-left: 50px;
-        padding-top: 30px;
-        font-size: 20px;
-        display: flex;
-        align-items:center;
-        gap: 15px;
+    margin-left: 144px;
+    padding-top: 33px;
+    font-size: 20px;
+    display: flex;
+    align-items:center;
+    gap: 15px;
     }
     
     .header_button {
-    padding: 3px 14px;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 7px 24px;
     width: auto;
     border-radius: 6px;
-    max-height: 40px;
+    max-height: 85px;
     background: #A4D3DE no-repeat center;
     border: none;
     cursor: pointer;
